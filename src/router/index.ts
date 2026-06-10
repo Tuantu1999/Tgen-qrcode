@@ -1,10 +1,10 @@
 import MainScreen from "@/components/MainScreen.vue";
 import QRStore from "@/components/QRStore.vue";
-import { createRouter, createWebHashHistory } from "vue-router";
+import { createRouter, createWebHistory } from "vue-router";
 
 const routes = [
   {
-    path: "/",
+    path: "/Tgen-qrcode/",
     name: "home",
     component: MainScreen,
   },
@@ -16,7 +16,7 @@ const routes = [
 ];
 
 const router = createRouter({
-  history: createWebHashHistory(),
+  history: createWebHistory(),
   routes,
 });
 

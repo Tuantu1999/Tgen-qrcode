@@ -103,19 +103,17 @@ const download = () => {
                 v-model="url"
               ></v-text-field>
             </v-col>
-            <v-col sm="6" md="6" cols="12" class="d-flex justify-end">
-              <v-btn color="primary" @click="genQR(url)">
+            <v-col cols="12" class="d-flex justify-center">
+              <v-btn color="primary" @click="genQR(url)" class="mr-3">
                 Generate QR Code
               </v-btn>
-            </v-col>
-            <v-col
-              v-if="listCode.length > 0"
-              sm="6"
-              md="6"
-              cols="12"
-              class="d-flex justify-start"
-            >
-              <v-btn color="primary" @click="toStore"> QR Store </v-btn>
+              <v-btn
+                v-if="listCode.length > 0"
+                color="primary"
+                @click="toStore"
+              >
+                QR Store
+              </v-btn>
             </v-col>
           </v-row>
         </v-form>
