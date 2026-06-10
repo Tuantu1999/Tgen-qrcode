@@ -18,7 +18,7 @@ const fetchListUrl = () => {
 fetchListUrl();
 
 const back = () => {
-  router.push("/");
+  router.push("/Tgen-qrcode/");
 };
 </script>
 <template>
