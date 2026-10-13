@@ -2,7 +2,7 @@ const rules = {
   required: (value: string) => !!value || "This field is required.",
   url: (value: string) => {
     const pattern = /^(https?:\/\/)[^\s]+$/;
-    return pattern.test(value) || "Please enter a valid URL.";
+    return pattern.test(value) || "Please enter a valid format URL.";
   },
   notScripts: (value: string) => {
     const pattern = /<script|<\/script>|on\w+=|javascript:/gi;
