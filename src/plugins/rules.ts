@@ -1,8 +1,7 @@
 const rules = {
   required: (value: string) => !!value || "This field is required.",
   url: (value: string) => {
-    const pattern =
-      /^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)*\/?$/;
+    const pattern = /^(https?:\/\/)[^\s]+$/;
     return pattern.test(value) || "Please enter a valid URL.";
   },
   notScripts: (value: string) => {
